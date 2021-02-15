@@ -1,0 +1,16 @@
+
+useful commands:
+django-admin startproject projectname      # to start new django project
+python manage.py runserver    # to run the server
+python manage.py starapp blog    # to create the app named "blog"
+
+for models migrations:
+python manage.py makemigrations
+python manage.py migrate
+python manage.py showmigrations
+
+for creating superuser:
+python manage.py createsuperuser
+
+username -vickytilotia
+password - 123456
