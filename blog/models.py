@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 # Create your models here.
 
@@ -37,4 +38,9 @@ class Post(models.Model):
         # responsible to show name of blog in admin instead of object1
         # also look the authoradmin class in admin.py 
         return self.title
+
+    def get_absolute_url(self):
+        return reverse("blog:post_single", args=[self.slug])
+        
+    
     
